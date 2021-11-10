@@ -2,9 +2,13 @@ package com.learning.demo.model;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 @Data
 public class Bet {
 
-    private int amount;
-    private String person;
+    private BigDecimal amount;
+
+    private Person person;
+
 }
