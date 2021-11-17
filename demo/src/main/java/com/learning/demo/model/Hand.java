@@ -3,6 +3,7 @@ package com.learning.demo.model;
 import lombok.Data;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 @Data
 public class Hand {
@@ -19,7 +20,7 @@ public class Hand {
 
 
 
-    public int getHandValue(){
+    public Stream<int> getHandValue(){
         return 20;
     }
     public boolean is21(){
